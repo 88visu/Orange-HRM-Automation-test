@@ -12,7 +12,7 @@ describe('OrangeHRM Demo – Change Passward', () => {
         cy.get(':nth-child(1) > .oxd-grid-2 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(oldPassword)
         cy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input').type(newPassword)
         cy.get('.user-password-row > .oxd-grid-2 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(newPassword)
-        button.submitButton().contains('Save').click()
+        button.submitButton().contains('Save').click();
         // Assert success message
         cy.contains('Success',).should('be.visible')
     })
